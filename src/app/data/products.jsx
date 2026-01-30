@@ -1,0 +1,88 @@
+const products = [
+  {
+    id: 1,
+    name: "Girls Floral Dress",
+    price: 1299,
+    size: "S, M, L",
+    image: "/girls1.jpg",
+  },
+  {
+    id: 2,
+    name: "Men Trousers",
+    price: 999,
+    size: "M, L, XL",
+    image: "/men1.jpg",
+  },
+  {
+    id: 3,
+    name: "Kids Wear",
+    price: 799,
+    size: "4Y - 8Y",
+    image: "/kids1.jpg",
+  },
+  {
+    id: 4,
+    name: "Women Sarees",
+    price: 1499,
+    size: "M, L, XL",
+    image: "/women1.jpg",
+  },
+  {
+    id: 5,
+    name: "Mens Kurti",
+    price: 500,
+    size: "M, L, XL",
+    image: "/kurti1.jpg",
+  },
+  {
+    id: 6,
+    name: "Traditional Wear Kurti",
+    price: 600,
+    size: "M, L, XL",
+    image: "/kurti2.jpg",
+  },
+  {
+    id: 7,
+    name: "Formal Shirt",
+    price: 700,
+    size: "M, L, XL",
+    image: "/shirt1.jpg",
+  },
+   {
+    id: 8,
+    name: "Formal Shirt Mens",
+    price: 750,
+    size: "M, L, XL",
+    image: "/shirt2.jpg",
+  },
+  {
+    id: 9,
+    name: "Kids Wear",
+    price: 500,
+    size: "M, L, XL",
+    image: "/boys1.jpg",
+  },
+  {
+    id: 10,
+    name: "Kids Wear",
+    price: 500,
+    size: "M, L, XL",
+    image: "/boys2.jpg",
+  },
+  {
+    id: 11,
+    name: "Kids Wear",
+    price: 1000,
+    size: "M, L, XL",
+    image: "/fancy1.jpg",
+  },
+  {
+    id: 12,
+    name: "Kids Wear",
+    price: 1000,
+    size: "M, L, XL",
+    image: "/fancy2.jpg",
+  },
+];
+
+export default products;
