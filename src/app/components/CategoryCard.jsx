@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 
-export default function CategoryCard({ title, image }) {
+export default function CategoryCard({ title, image, onClick }) {
   return (
-    <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-white group hover:shadow-2xl transition-all duration-300">
+    <div
+      onClick={onClick}
+      className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-white group hover:shadow-2xl transition-all duration-300 cursor-pointer"
+    >
 
       {/* CATEGORY IMAGE */}
       <Image
@@ -10,7 +14,7 @@ export default function CategoryCard({ title, image }) {
         alt={title}
         fill
         sizes="(max-width: 768px) 100vw, 33vw"
-        className="object-contain p-4 transition-transform duration-300 group-hover:scale-100"
+        className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
         priority
       />
 

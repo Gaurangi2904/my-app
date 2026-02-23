@@ -8,30 +8,28 @@ import SearchBar from "@/app/components/SearchBar";
 
 export default function Home() {
   const [search, setSearch] = useState("");
-const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("All");
 
-const filteredProducts = products.filter((product) => {
-  const matchesSearch = product.name
-    .toLowerCase()
-    .includes(search.toLowerCase());
+  const filteredProducts = products.filter((product) => {
+    const matchesSearch = product.name
+      ?.toLowerCase()
+      .includes(search.toLowerCase());
 
-  const matchesCategory =
-    category === "All" || product.category === category;
+    const matchesCategory =
+      category === "All" ||
+      product.category?.toLowerCase() === category.toLowerCase();
 
-  return matchesSearch && matchesCategory;
-});
-
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
 
       {/* 🌸 HERO SECTION */}
       <section className="mb-14">
-        <h1
-          className="text-4xl md:text-5xl font-extrabold 
+        <h1 className="text-4xl md:text-5xl font-extrabold 
           bg-gradient-to-r from-pink-600 via-purple-500 to-indigo-500
-          text-transparent bg-clip-text"
-        >
+          text-transparent bg-clip-text">
           Sharwari Collection ✨
         </h1>
 
@@ -53,29 +51,41 @@ const filteredProducts = products.filter((product) => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-          <CategoryCard title="Kids" image="/kids2.jpg" />
-          <CategoryCard title="Men" image="/men2.jpg" />
-          <CategoryCard title="Girls" image="/girls2.jpg" />
+          <CategoryCard
+            title="Kids"
+            image="/kids2.jpg"
+            onClick={() => setCategory("Kids")}
+          />
+          <CategoryCard
+            title="Men"
+            image="/men2.jpg"
+            onClick={() => setCategory("Men")}
+          />
+          <CategoryCard
+            title="Girls"
+            image="/girls2.jpg"
+            onClick={() => setCategory("Girls")}
+          />
         </div>
       </section>
-      {/* CATEGORY FILTER BUTTONS */}
-<div className="flex gap-4 mb-8 flex-wrap">
-  {["All", "Kids", "Men", "Girls"].map((cat) => (
-    <button
-      key={cat}
-      onClick={() => setCategory(cat)}
-      className={`px-5 py-2 rounded-full font-medium transition
-        ${
-          category === cat
-            ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
-            : "bg-gray-100 hover:bg-gray-200"
-        }`}
-    >
-      {cat}
-    </button>
-  ))}
-</div>
 
+      {/* CATEGORY FILTER BUTTONS */}
+      <div className="flex gap-4 mb-8 flex-wrap">
+        {["All", "Kids", "Men", "Girls"].map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setCategory(cat)}
+            className={`px-5 py-2 rounded-full font-medium transition
+              ${
+                category === cat
+                  ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
+                  : "bg-gray-100 hover:bg-gray-200"
+              }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
 
       {/* 🔥 PRODUCTS SECTION */}
       <section>
