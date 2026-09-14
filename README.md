@@ -1,25 +1,28 @@
-# ❤️ Loved By All
+# 👗 Sharvari Collection
 
-**Loved By All** is a modern fashion e-commerce web application designed to provide users with a simple and attractive online shopping experience.
+Sharvari Collection is a modern fashion e-commerce web application designed to provide users with a simple, attractive, and responsive online shopping experience.
 
-The application allows users to explore fashion products, browse different categories, view product information, and discover clothing styles through a responsive and user-friendly interface.
+The application allows users to explore fashion products, browse different categories, view product information, and discover clothing styles through a user-friendly interface.
 
 ---
 
 ## 🌐 Live Demo
 
-### 🛍️ Website
+### 🛍️ Live Website
 https://my-app-phi-brown-95.vercel.app/
+
+### 💻 GitHub Repository
+https://github.com/Gaurangi2904/my-app
 
 ---
 
 ## 📌 About The Project
 
-Loved By All is a clothing and fashion e-commerce website built with modern web technologies.
+Sharvari Collection is a clothing and fashion e-commerce website built using modern web technologies.
 
-The main goal of this project was to create a clean, responsive, and visually appealing shopping interface where users can browse fashion products and explore different categories.
+The main goal of this project is to create a clean, responsive, and visually appealing shopping interface where users can browse fashion products and explore different categories.
 
-The website focuses on:
+The project focuses on:
 
 - Clean and modern UI
 - Product discovery
@@ -27,7 +30,7 @@ The website focuses on:
 - Product details
 - Responsive design
 - Easy navigation
-- Smooth shopping experience
+- User-friendly shopping experience
 
 ---
 
@@ -37,12 +40,12 @@ The website focuses on:
 
 - Attractive fashion-focused landing page
 - Featured products
-- Navigation to different sections
+- Easy navigation
 - Modern and responsive layout
 
 ### 👗 Product Browsing
 
-Users can browse different fashion products available on the platform.
+Users can browse different fashion products available in the collection.
 
 Product cards display information such as:
 
@@ -54,37 +57,35 @@ Product cards display information such as:
 
 ### 🏷️ Product Categories
 
-The application provides category-based browsing, including:
+Products can be explored through different categories, including:
 
 - 👦 Kids
 - 👨 Men
 - 👧 Girls
 
-This makes it easier for users to discover products based on their interests.
-
 ### 🔎 Product Details
 
-Users can select a product and view more information about it.
+Users can select a product to explore more information about it.
 
 ### 📱 Responsive Design
 
-The website is designed to provide a good experience across:
+The website is designed to work across:
 
 - Desktop
 - Laptop
 - Tablet
 - Mobile devices
 
-### 🎨 Modern UI
+### 🎨 Modern User Interface
 
-The interface focuses on:
+The application focuses on:
 
 - Clean layouts
 - Product-focused design
 - Simple navigation
-- Attractive typography
+- Attractive presentation
 - Consistent spacing
-- Fashion-oriented presentation
+- Fashion-oriented UI
 
 ---
 
@@ -98,7 +99,7 @@ The interface focuses on:
 - HTML
 - CSS
 
-## Development Tools
+## Tools
 
 - Git
 - GitHub
@@ -110,21 +111,27 @@ The interface focuses on:
 
 ---
 
-# 🏗️ Project Structure
+# 🏗️ Project Architecture
 
 ```text
-Loved-By-All/
-│
-├── app/
-│   ├── components/
-│   ├── pages/
-│   ├── ...
-│
-├── public/
-│   ├── images/
-│   └── ...
-│
-├── package.json
-├── next.config.js
-├── README.md
-└── ...
+                 User
+                   │
+                   ▼
+          ┌─────────────────┐
+          │   Sharvari      │
+          │   Collection    │
+          │   Web App       │
+          └────────┬────────┘
+                   │
+                   ▼
+          ┌─────────────────┐
+          │    Next.js      │
+          │    + React      │
+          └────────┬────────┘
+                   │
+                   ▼
+          ┌─────────────────┐
+          │    Products     │
+          │    Categories   │
+          │    Details      │
+          └─────────────────┘
