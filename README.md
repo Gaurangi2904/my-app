@@ -11,9 +11,6 @@ The application allows users to explore fashion products, browse different categ
 ### 🛍️ Live Website
 https://my-app-phi-brown-95.vercel.app/
 
-### 💻 GitHub Repository
-https://github.com/Gaurangi2904/my-app
-
 ---
 
 ## 📌 About The Project
